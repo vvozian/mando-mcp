@@ -1,0 +1,12 @@
+name = "mando-mcp"
+main = "src/index.ts"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+# Base URL of the Mando API (see https://developer.mando.fi). Override as needed.
+MANDO_API_BASE_URL = "https://api.mando.fi"
+
+# Secrets (set with `wrangler secret put`):
+#   MANDO_API_TOKEN  - bearer token used to call the Mando API
+#   MCP_AUTH_TOKEN   - optional; if set, clients must send an "Authorization: Bearer <token>" header
